@@ -5,7 +5,10 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/postmanlabs/sails-mysql-transactions.git"
+    "url": "https://github.com/svenvarkel/sails-mysql-transactions.git"
+  },
+  "config": {
+    "unsafe-perm": true
   },
   "keywords": [
     "sails",

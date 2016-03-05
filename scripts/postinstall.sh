@@ -33,9 +33,8 @@ if [ -d "${MOD_DIR}/sails-mysql" ]; then
 fi
 
 echo "${INFO} Injecting waterline...";
-
 pushd "${MOD_DIR}/sails" > /dev/null;
-npm remove waterline;
+sudo npm remove waterline;
 npm install "${MOD_DIR}/sails-mysql-transactions/waterline";
 popd > /dev/null;
 
