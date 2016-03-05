@@ -9,10 +9,10 @@ set -e;
 # If this is an NPM installation, we do not expect `.gitmodules` in the directory
 # since it is ignored by `.npmignore`. This is a fairly robust check to test whether
 # this script has been run as part of npm install or as part of self install.
-if [ -f ".gitmodules" ]; then
-    echo "${INFO} Not an NPM install, exiting waterline injection.";
-    exit 0;
-fi;
+#if [ -f ".gitmodules" ]; then
+#    echo "${INFO} Not an NPM install, exiting waterline injection.";
+#    exit 0;
+#fi;
 
 # Check whether sails has been already installed or not. If not, this is an
 # error and we should not proceed.
