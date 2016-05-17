@@ -6,6 +6,9 @@ MOD_DIR="../../node_modules";
 
 set -e;
 
+echo "who am I at line 9?"
+echo $(whoami)
+
 # If this is an NPM installation, we do not expect `.gitmodules` in the directory
 # since it is ignored by `.npmignore`. This is a fairly robust check to test whether
 # this script has been run as part of npm install or as part of self install.
@@ -31,6 +34,10 @@ if [ -d "${MOD_DIR}/sails-mysql" ]; then
     echo "${INFO} Preferably remove sails-mysql from packages before using this in production.";
     echo -e "\033[0m\n";
 fi
+
+
+echo "who am I at line 39?"
+echo $(whoami)
 
 echo "${INFO} Injecting waterline...";
 pushd "${MOD_DIR}/sails" > /dev/null;
